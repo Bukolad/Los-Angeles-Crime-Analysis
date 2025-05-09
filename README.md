@@ -91,6 +91,9 @@ In terms of victim descent, Hispanic, Latino, or Mexican individuals were the mo
 
 This pattern suggests an opportunity to develop targeted victim support and prevention programs, particularly focused on working-age adults and youth, who appear to be most at risk.
 
+![image](https://github.com/user-attachments/assets/b514973d-c70c-4405-bcf6-2e56881087d7)
+
+
 - ## Crime
 The crime analysis for Los Angeles from 2020 to 2025 reveals that vehicle theft was the most frequently committed crime, with 115,000 cases reported. This was followed by simple assault, which recorded 75,000 incidents during the same period.
 
