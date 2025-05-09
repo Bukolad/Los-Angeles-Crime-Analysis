@@ -61,6 +61,9 @@ A Calendar Table was created to support year growth comparisons
 # Data Model
 The Data Model was automatically created in Power BI. This shows the relationship between the various table in this project.
 
+![image](https://github.com/user-attachments/assets/eb533191-9a3d-4521-b7c8-5d69c426ef2e)
+
+
 # Data Analysis & Visualization 
 After the completion of data cleaning and preparation, i proceeded to begin my analysis and visualization. To ensure easy readability and understanding,i divided the visualization into 5 dashboards. These dashboards were used to effectively visualize key insights from this analysis.
 
