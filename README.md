@@ -100,6 +100,9 @@ The data also shows that a total of 21 areas in Los Angeles were covered in this
 
 In terms of crime locations, streets were identified as the top crime premises, with 261,000 cases. This was followed by single-family dwellings, which recorded 164,000 incidents, multi-unit dwellings with 119,000 cases, parking lots with 69,000, and other business locations with 48,000 cases.
 
+![image](https://github.com/user-attachments/assets/ccce571e-73a2-4443-aafd-51258ad2f5c9)
+
+
 - ## Crimes Report
 The crime report analysis reveals that the majority of crimes in Los Angeles were reported early, with approximately 769,000 cases recorded within just two days of the incident. However, there were still noticeable delays in reporting, as about 104,000 cases were reported within one week, 73,000 within one month, and 43,000 within six months. A smaller, yet significant portion around 16,000 cases were reported over six months later, indicating potential barriers or delays in crime reporting among certain cases.
 
