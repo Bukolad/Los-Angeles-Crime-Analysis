@@ -40,7 +40,7 @@ The data for this project was collected from kaggle. The data included crime rec
 # Data Cleaning & Preparation
 The data cleaning process began in the Power Query Editor in Power BI. The major operation included 
 - Removal of duplicates. 
-- Text operations such as capitalising each words and replacing values were also carried out on some columns. The M Query Codes from the Power Query Editor have been attached to this repository.
+- Text operations such as capitalising each words and replacing values were also carried out on some columns. The M Query [Codes](M.QUERY.txt) from the Power Query Editor have been attached to this repository.
 After data cleaning, for easily analysis i added a custom column to group victim's age for easy understanding. In addition, i created new measures and new columns to provide deeper insights into crime trends :
 - Average victim age : To profile age trends across crimes
 - Blank measure for month and year : to
