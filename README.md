@@ -108,7 +108,10 @@ The crime report analysis reveals that the majority of crimes in Los Angeles wer
 
 When examining the status of these crimes, it is evident that a large case remains unresolved. Over 804,000 cases are currently marked as Investigation Continuing, reflecting the high volume of ongoing cases within LAPD’s records. Other statuses show 109,000 cases categorized as Adult Other, while 87,000 cases resulted in Adult Arrests. Juvenile-related statuses are lower in volume, with 3,000 cases leading to Juvenile Arrests and 2,000 cases listed as Juvenile Other. A small count of 7 cases remain under unknown status.
 
-This presents an opportunity for the Los Angeles Police Department to strengthen its crime reporting systems, encouraging more timely reports and addressing the underlying causes of delayed reporting
+This presents an opportunity for the Los Angeles Police Department to strengthen its crime reporting systems, encouraging more timely reports and addressing the underlying causes of delayed reporting.
+
+![image](https://github.com/user-attachments/assets/89656fd0-c2a2-4982-992d-6af1c9d9cc24)
+
 
 # Conclusion
 The analysis of crime data in Los Angeles from 2020 to 2025 reveals important patterns in both crime trends and victim profiles. A total of 1.01 million crimes were reported during this period, with incidents peaking in 2022 before showing a sharp decline in the following years. Vehicle theft and simple assault emerged as the most common crimes, while streets and residential dwellings were identified as the primary locations where these crimes took place.
