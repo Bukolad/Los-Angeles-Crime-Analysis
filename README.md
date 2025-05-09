@@ -71,6 +71,7 @@ Some key insights from the data visualization are summarized below:
   When analyzing weapons used, Unspecified methods were the most common, contributing to over 678k incidents, followed by Strong-Arm attacks(hands,fist,bodily force) at 175k cases. Other top weapons included unknown weapons, verbal threats,and handguns.
   The yearly crime trends shows an initial rise from 2020 to 2022, followed by a steep decline in 2024 and 2025. 
 
+![image](https://github.com/user-attachments/assets/72dea7ef-c400-48a3-91ec-6f1ef8db33f7)
 
 
   - ## Time Trends
