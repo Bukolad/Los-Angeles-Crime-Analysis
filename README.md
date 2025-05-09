@@ -78,7 +78,10 @@ Some key insights from the data visualization are summarized below:
   The Time Trends analysis shows distinct patterns in criminal activity across different time frames. Crime tend to peak during afternnon and early evening hours, with the 3:00PM TO 5:59PM window showing the highest activity, closely followed by 6:00PM TO 8:59PM. In Contrast, the quietest period occurs between 3:00 AM and 5:59 AM when criminal incidents are at their lowest.
   Monthly patterns show January experiencing the most significant spike in crimes with an 18.6% increase, while also sees a noticeable 3.8% uptick. The months of February,April, June, and September demonstrate declines of -6.8%,-4.9%, -2.0%, -3.4% and -6.1% respectively. Throughout the year, monthly crime cunts flunctuate between 78,000 and 93,000 incidents.
   When examining weekly trends, Friday emerges as the peak day for criminal activity approximately 153,700 incidents, followed closely by Saturday with around 147,500 cases. Tuesday consistently shows the lowest crime numbers at about 138,200 reported incidents.
-  The Yearly Overview from 2020 to 2025 reveals significant fluctuations. The year 2022 saw the highest volume at 235,000 crimes, followed closely by 2023 with 232,000 crimes with a decline of -2908 crimes. After a modest increase in of 25,000 crimes in 2022, another substantial decline occured in 2023 with over 104,000 fewer crimes. 
+  The Yearly Overview from 2020 to 2025 reveals significant fluctuations. The year 2022 saw the highest volume at 235,000 crimes, followed closely by 2023 with 232,000 crimes with a decline of -2908 crimes. After a modest increase in of 25,000 crimes in 2022, another substantial decline occured in 2023 with over 104,000 fewer crimes.
+
+  ![image](https://github.com/user-attachments/assets/a1b17e12-4662-44bc-bd09-91ca2135266a)
+
 - ## Victim's Demographics
 The victim demographics analysis shows that male victims are the most affected group, accounting for 40.18% of reported crimes in Los Angeles between 2020 and 2025. Female victims make up 35.67% of cases, while incidents where the victim’s gender was not recorded account for 24.14%.
 
