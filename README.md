@@ -23,6 +23,10 @@ The crime dataset used in this project was sourced from Kaggle, based on public 
 - Status : Staus of the case.
 - Location: Street address of crime incident.
   The CSV file can be downloaded [here](https://catalog.data.gov/dataset/crime-data-from-2020-to-present)
+  The major Transformation carried out in Power BI Query Editor include:
+  - Removal of Duplicates in the DR-NO
+  - Formatting Column by Capitalizing the Rows
+  - Replacing Values : Values in Victim sex and Victims Descent was changed. Example, F in Victim sex was changed to Female, while H in Victim Descent waas changed to Hispanic/Laotinatian/Mexican.
 
  # Tools and Technologies used
 1. Power BI : This was the major tool used for this project. Power BI was used to create interactive dashboards and visualization for the insights generated from this project.
