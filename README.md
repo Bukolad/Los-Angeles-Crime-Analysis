@@ -71,6 +71,8 @@ Some key insights from the data visualization are summarized below:
   When analyzing weapons used, Unspecified methods were the most common, contributing to over 678k incidents, followed by Strong-Arm attacks(hands,fist,bodily force) at 175k cases. Other top weapons included unknown weapons, verbal threats,and handguns.
   The yearly crime trends shows an initial rise from 2020 to 2022, followed by a steep decline in 2024 and 2025. 
 
+
+
   - ## Time Trends
   The Time Trends analysis shows distinct patterns in criminal activity across different time frames. Crime tend to peak during afternnon and early evening hours, with the 3:00PM TO 5:59PM window showing the highest activity, closely followed by 6:00PM TO 8:59PM. In Contrast, the quietest period occurs between 3:00 AM and 5:59 AM when criminal incidents are at their lowest.
   Monthly patterns show January experiencing the most significant spike in crimes with an 18.6% increase, while also sees a noticeable 3.8% uptick. The months of February,April, June, and September demonstrate declines of -6.8%,-4.9%, -2.0%, -3.4% and -6.1% respectively. Throughout the year, monthly crime cunts flunctuate between 78,000 and 93,000 incidents.
