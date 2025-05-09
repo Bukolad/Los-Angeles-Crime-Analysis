@@ -1,0 +1,51 @@
+let
+    Source = Csv.Document(File.Contents("C:\Users\USER\Downloads\LA_Crime_Data.csv"),[Delimiter=",", Columns=13, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"DR_NO", Int64.Type}, {"Date_Rptd", type date}, {"DATE_OCC", type date}, {"TIME_OCC", type time}, {"AREA_NAME", type text}, {"Crime", type text}, {"Vict_Age", Int64.Type}, {"Vict_Sex", type text}, {"Vict_Descent", type text}, {"Premise", type text}, {"Weapon", type text}, {"Status", type text}, {"LOCATION", type text}}),
+    #"Removed Duplicates" = Table.Distinct(#"Changed Type"),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Removed Duplicates",{{"Date_Rptd", type date}}),
+    #"Replaced Value" = Table.ReplaceValue(#"Changed Type1","X","Unknown",Replacer.ReplaceText,{"Vict_Sex"}),
+    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","M","Male",Replacer.ReplaceText,{"Vict_Sex"}),
+    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","F","Female",Replacer.ReplaceText,{"Vict_Sex"}),
+    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","A","Other Asian",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","B","Black",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","C","Chinese",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value6" = Table.ReplaceValue(#"Replaced Value5","F","Filipino",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","H","Hispanic/Latin/Mexican",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value8" = Table.ReplaceValue(#"Replaced Value7","K","Korean",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","O","Other",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9","W","White",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value11" = Table.ReplaceValue(#"Replaced Value10","X","Unknown",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value12" = Table.ReplaceValue(#"Replaced Value11","Z","Asian Indian",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value13" = Table.ReplaceValue(#"Replaced Value12","H","Unknown",Replacer.ReplaceText,{"Vict_Sex"}),
+    #"Replaced Value14" = Table.ReplaceValue(#"Replaced Value13","-","Unknown",Replacer.ReplaceText,{"Vict_Sex"}),
+    #"Replaced Value15" = Table.ReplaceValue(#"Replaced Value14","D","Cambodian",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value16" = Table.ReplaceValue(#"Replaced Value15","G","Guamanian",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value17" = Table.ReplaceValue(#"Replaced Value16","I","American Indian/Alaskan Native",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value18" = Table.ReplaceValue(#"Replaced Value17","J","Japanese",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value19" = Table.ReplaceValue(#"Replaced Value18","L","Laotian",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value20" = Table.ReplaceValue(#"Replaced Value19","P","Pacific Islander",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value21" = Table.ReplaceValue(#"Replaced Value20","S","Samoan",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value22" = Table.ReplaceValue(#"Replaced Value21","U","Hawaiian",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value23" = Table.ReplaceValue(#"Replaced Value22","V","Vietnamese",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Replaced Value24" = Table.ReplaceValue(#"Replaced Value23","Hawaiiannknown","Unknown",Replacer.ReplaceText,{"Vict_Descent"}),
+    #"Capitalized Each Word" = Table.TransformColumns(#"Replaced Value24",{{"Crime", Text.Proper, type text}, {"Premise", Text.Proper, type text}, {"LOCATION", Text.Proper, type text}}),
+    #"Replaced Value25" = Table.ReplaceValue(#"Capitalized Each Word","Invest Cont","Investigation Continue",Replacer.ReplaceText,{"Status"}),
+    #"Replaced Value26" = Table.ReplaceValue(#"Replaced Value25","Juv Arrest","Juvenlie Arrest",Replacer.ReplaceText,{"Status"}),
+    #"Replaced Value27" = Table.ReplaceValue(#"Replaced Value26","Juv Other","Juvenile Other",Replacer.ReplaceText,{"Status"}),
+    #"Replaced Value28" = Table.ReplaceValue(#"Replaced Value27","UNK","Unknown",Replacer.ReplaceText,{"Status"}),
+    #"Replaced Value29" = Table.ReplaceValue(#"Replaced Value28","Investigation Continue","Investigation Continuing",Replacer.ReplaceText,{"Status"}),
+    #"Capitalized Each Word1" = Table.TransformColumns(#"Replaced Value29",{{"Weapon", Text.Proper, type text}}),
+    #"Replaced Value30" = Table.ReplaceValue(#"Capitalized Each Word1","","Unspecified",Replacer.ReplaceValue,{"Weapon"}),
+    #"Replaced Value31" = Table.ReplaceValue(#"Replaced Value30","","Unspecified",Replacer.ReplaceValue,{"Premise"}),
+    #"Replaced Value32" = Table.ReplaceValue(#"Replaced Value31","","Unknown",Replacer.ReplaceValue,{"Vict_Descent"}),
+    #"Replaced Value33" = Table.ReplaceValue(#"Replaced Value32","","Unknown",Replacer.ReplaceValue,{"Vict_Sex"}),
+    #"Added Custom" = Table.AddColumn(#"Replaced Value33", "Vic_age_group", each if[Vict_Age] < 0 then "Unknown"
+else if[Vict_Age] <=17 then "0-17"
+else if[Vict_Age] <=25 then "18-25"
+else if[Vict_Age] <=34 then "26-34"
+else if[Vict_Age] <=60 then "35-60"
+else if[Vict_Age] <=120 then "60 upward"
+else "Invalid age")
+in
+    #"Added Custom"
