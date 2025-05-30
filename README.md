@@ -1,5 +1,5 @@
 # Los-Angeles-Crime-Analysis
-This project presents a detailed analysis of crime incidents reported  by the Los Angeles Police Department (LAPD) from 2020 to 2025. The data used for this project was sourced from Kaggle with over a million crimes . The goal is to uncover patterns, track crime trends, and provide actionable insights.
+This project presents a detailed analysis of crime incidents reported  by the Los Angeles Police Department (LAPD) from 2020 to 2025. The data used for this project was sourced from Data.Gov website with over a million crimes . The goal is to uncover patterns, track crime trends, and provide actionable insights.
 # Project Background
 Los-Angeles Police Department(LAPD) was established in 1869, LAPD is the primary law enforcement agency serving nearly 4 million residents across 21 areas in Los-Angeles. With a mission to protect and serve, LAPD works to prevent crime, enforce laws, and ensure public safety in one of the most dynamic cities in the world.
 
@@ -7,7 +7,7 @@ From 2020-2025, Los-Angeles recorded hundreds of thousands of crime incidents ac
 This project presents a comprehensive analysis of over 1 million crime records reported between 2020 and 2025. The aim is to uncover insights into crime trends across different areas, highlight delays in crime reporting, and provide visibility into case outcomes.
 
 # Overview of the Data
-The crime dataset used in this project was sourced from Kaggle, based on public on public crime records provided by the Los-Angeles Police Department(LAPD). It contained detailed reports of crimes that occured between 2020 and 2025 across various areas of Los-Angeles. The data was cleaned and transformed in Power Query Editor in Power BI
+The crime dataset used in this project was sourced from Data.Gov website, based on public on public crime records provided by the Los-Angeles Police Department(LAPD). It contained detailed reports of crimes that occured between 2020 and 2025 across various areas of Los-Angeles. The data was cleaned and transformed in Power Query Editor in Power BI
 ## Key Data Columns
 - DR-NO - Divisions Record Number.
 - Date Reported : The date when the crime was officially reported. 
