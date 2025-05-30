@@ -35,6 +35,9 @@ The crime dataset used in this project was sourced from Data.Gov website, based 
 # Project Workflow
 A Project Workflow provides structure for every data analytics project. It helps establish a clear roadmap of sequentials steps, from defining the initial probelm to delivering final insights. This keep the projects organized, aligned with goals, and ensure no critical steps are overlooked.
 
+![image](https://github.com/user-attachments/assets/371ebfb1-59d1-437d-a254-6fee40a9ce65)
+
+
 # Project Objective
 The objectives of this project was to analyze crime trends in Los-Angeles between 2020 and 2025 and provide actionable insights . From this project, it will be easy to understand crime pattern, identify high-crime areas, analyze victim demographics, and tell a data-driven story about the state of crime in Los-Angeles, helping law enforcement agancies, policymakers, and the public make informed decisions.
 
